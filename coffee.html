@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chartset="UTF-8">
+        <title> Over Donuts </title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+    <nav>
+        <ul>
+            <li><a href="Index.html"> Home </a></li>
+            <li><a href="Donuts.html">Donuts </a></li>
+            <li><a href="flavors.html">Seasonal flavors</a></li>
+            <li><a href="coffee.html">Coffee </a></li>
+            <li><a href="About.html">About us</a></li>
+        </ul>
+       <img src="Image\Mode\Darkmode.PNG" id="icon">
+    </nav>
+    <div id="coffeeId-1">
+    <h2> This Is Our Popular Hot Drinks </h2>
+<Table>
+     <tr>
+        <th> <img src="Image/Coffee/Coffee-1.PNG"/></th>
+        <th> <img src="Image/Coffee/Coffee-2.PNG"/></th>
+        <th> <img src="Image/Coffee/Coffee-3.PNG"/></th>
+     </tr>
+    </div>
+     <tr>
+        <td><h5>Hot Choco latte</h5><br>
+            <button id="button"> Select </button></td>
+
+        <td><h5>Hot Caramel latte</h5><br>
+            <button id="button"> Select </button> </td>
+
+        <td><h5>Hot Matcha latte</h5><br>
+            <button id="button"> Select </button></td>
+     </tr>
+    </Table>
+    <Table>
+        <tr>
+            <th><h2>This Is Our Popular Cold Drinks </h2></th>
+        </tr>
+        </table>
+     <div id="coffeeId-2">
+    <table>
+     <tr>
+        <th> <img src="Image/Coffee/Coffee-4.PNG"/></th>
+        <th> <img src="Image/Coffee/Coffee-5.PNG"/></th>
+        <th> <img src="Image/Coffee/Coffee-6.PNG"/></th>
+     </tr>
+    </div>
+     <tr>
+        <td><h5>Frozen Mint Lemonade</h5><br>
+        <button id="button"> Select </button></td>
+
+        <td><h5>Iced white mocha</h5><br>
+            <button id="button"> Select </button></td>
+            
+        <td><h5>Iced Americano </h5><br>
+        <button id="button"> Select </button></td>
+    </tr>
+</Table>
+<script>
+    var icon = document.getElementById("icon");
+    icon.onclick=function(){
+        document.body.classList.toggle("Darkmode")
+            if(document.body.classList.contains("Darkmode")){
+          icon.src="Image/Mode/Lightmode.PNG";
+        }
+        else{
+            icon.src="Image/Mode/Darkmode.PNG";
+        }
+    }
+</script>
+</div>
+</body>
+</html>

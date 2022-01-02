@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chartset="UTF-8">
+        <title> Over Donuts </title>
+        <link rel="stylesheet" href="Style.css">
+        
+    </head>
+    <body class="Lightmode">
+      
+        <nav >
+    <ul>
+        <li><a href="Index.html"> Home </a></li>
+        <li><a href="Donuts.html">Donuts </a></li>
+        <li><a href="flavors.html">Seasonal flavors</a></li>
+        <li><a href="coffee.html">Coffee </a></li>
+        <li><a href="About.html">About us</a></li>
+    </ul>
+        <img src="Image\Mode\Darkmode.PNG" id="icon">
+        
+        <span Id="cart_store">0</span>
+    </nav>
+    <img src="Image/homepage.jpg" id="Home">
+    <script src = "icon_change.js"> </script>
+    <script>
+   var counter = 0;
+		var item_count;
+		var cart = document.getElementById("");
+		function button_cart(){
+			item_count = document.getElementById("cart_store");
+			counter = 1 +eval(item_count.textContent);
+			console.log(counter);
+			if(counter == 0){
+				cart.src="imgs. .PNG";
+			} else {
+				cart.src="imgs. .PNG";
+			}
+			
+			item_count.innerHTML = counter;
+		}
+</script>
+</body>
+</html>

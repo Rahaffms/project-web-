@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chartset="UTF-8">
+        <title> Over Donuts </title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body class="lightmode">
+    <nav>
+        <ul>
+            <li><a href="Index.html"> Home </a></li>
+            <li><a href="Donuts.html">Donuts </a></li>
+            <li><a href="flavors.html">Seasonal flavors</a></li>
+            <li><a href="coffee.html">Coffee </a></li>
+            <li><a href="About.html">About us</a></li>
+        </ul>
+       <img src="Image\Mode\Darkmode.PNG" id="icon">
+       
+        
+        <span Id='cart_store'>0</span>
+    </nav>
+    <div id="DonutId-1">
+<Table>
+     <tr>
+        <th> <img src="Image/Donuts/donuts-6.PNG"/></th>
+         <th> <img src="Image/Donuts/donuts-5.PNG"/></th>
+         <th> <img src="Image/Donuts/donuts-3.PNG"/></th>
+     </tr>
+    </div>
+     <tr>
+        <td>
+            <h5>Cinnamon & Sugar</h5> 
+            tossed in cinnamon & sugar<br>
+            <button onclick="button_cart()">Select</button>
+        </td>
+
+        <td><h5>Chocolate Peanut Butter</h5> 
+            peanut butter on chocolate <br>
+            <button onclick="button_cart()">Select</button>
+        </td>
+        <td><h5>Sprinkles</h5> 
+        vanilla glazed with sprinkles<br>
+        <button onclick="button_cart()" >Select</button>
+        </td>
+     </tr>
+     <div id="DonutId-2">
+     <tr>
+        <th> <img src="Image/Donuts/donuts-4.PNG"/></th>
+        <th> <img src="Image/Donuts/donuts-2.PNG"/></th>
+        <th> <img src="Image/Donuts/donuts-1.PNG"/></th>
+     </tr>
+    </div>
+     <tr>
+        <td><h5>Chocolate Top</h5>
+        topped with chocolate icing<br>
+        <button onclick="button_cart()">Select</button>
+        </td>
+        <td><h5>Chocolate Raspberry</h5> 
+            raspberry glazed<br>
+            <button onclick="button_cart()">Select</button>
+        </td>
+        <td><h5>Raspberry Riot</h5>
+            Dipped in raspberry glaze<br>
+            <button onclick="button_cart()">Select</button>
+        </td>
+    </tr>
+</Table>
+<script>
+    var icon = document.getElementById("icon");
+    icon.onclick=function(){
+        document.body.classList.toggle("Darkmode")
+            if(document.body.classList.contains("Darkmode")){
+          icon.src="Image/Mode/Lightmode.PNG";
+        }
+        else{
+            icon.src="Image/Mode/Darkmode.PNG";
+        }
+    }
+</script>
+<script>
+    var counter = 0;
+         var item_count;
+         var cart = document.getElementById("");
+         function button_cart(){
+             item_count = document.getElementById("cart_store");
+             counter = 1 +eval(item_count.textContent);
+             console.log(counter);
+             if(counter == 0){
+                 cart.src="imgs. .PNG";
+             } else {
+                 cart.src="imgs. .PNG";
+             }
+             
+             item_count.innerHTML = counter;
+         }
+ </script>
+</div>
+</body>
+</html>

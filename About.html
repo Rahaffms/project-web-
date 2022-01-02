@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chartset="UTF-8">
+        <title> Over Donuts </title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <nav>
+    <ul>
+        <li><a href="Index.html"> Home </a></li>
+        <li><a href="Donuts.html">Donuts </a></li>
+        <li><a href="flavors.html">Seasonal flavors</a></li>
+        <li><a href="coffee.html">Coffee </a></li>
+        <li><a href="About.html">About us</a></li>
+    </ul>
+       <img src="Image\Mode\Darkmode.PNG" id="icon">
+    </nav>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick=function(){
+            document.body.classList.toggle("Darkmode")
+                if(document.body.classList.contains("Darkmode")){
+              icon.src="Image/Mode/Lightmode.PNG";
+            }
+            else{
+                icon.src="Image/Mode/Darkmode.PNG";
+            }
+        }
+    </script>
+    <div class="AboutText">
+        <h1>About Over Donuts</h1>
+        <p>We express our love to you by making the best donuts that suit all your occasions<br>
+             served with the best kind of coffee of your choice,
+             and do not forget that you can choose your flavors for your donuts ;P.
+        </p>
+        <img src="Image/about-d.jpg" id="about-d">
+    </div>
+    <div class="ContactUs">
+        <br>
+        <footer>To communicate with us through the social media or to support us.<br>
+        	<br>-Instagram -Facebook -number
+        </footer> 
+    </div>
+</body>
+</html>
